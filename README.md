@@ -68,6 +68,62 @@ python ai-agent-search-optimization/scripts/build_llms_txt.py --site https://exa
 python ai-agent-search-optimization/scripts/prompt_matrix.py --brand "Example" --category "customer support software" --competitors "Zendesk,Intercom"
 ```
 
+## MCP Server
+
+This repository also ships an MCP server that exposes the skill as callable tools, resources, and prompts.
+
+### Tools
+
+- `audit_site`: audit a URL for AI search readiness, crawler access, `/llms.txt`, sitemap, schema, and visible text issues.
+- `build_llms_txt`: generate a curated `/llms.txt` draft for AI agents.
+- `prompt_matrix`: create AI visibility prompt suites for ChatGPT, Perplexity, Google AI Mode, and similar answer engines.
+
+### Resources
+
+- `ai-search://principles`
+- `ai-search://audit-framework`
+- `ai-search://deliverable-templates`
+
+### Prompts
+
+- `ai_visibility_audit`
+- `llms_txt_review`
+- `geo_content_brief`
+
+### Local MCP Config
+
+Until the npm package is published, run directly from GitHub:
+
+```json
+{
+  "mcpServers": {
+    "ai-agent-search-optimization": {
+      "command": "npx",
+      "args": ["-y", "github:SeyitKaanGunes/ai-agent-search-optimization"]
+    }
+  }
+}
+```
+
+After npm publish, the config becomes:
+
+```json
+{
+  "mcpServers": {
+    "ai-agent-search-optimization": {
+      "command": "npx",
+      "args": ["-y", "mcp-server-ai-agent-search-optimization"]
+    }
+  }
+}
+```
+
+The MCP Registry metadata is in `server.json`. The package declares:
+
+```text
+mcpName: io.github.seyitkaangunes/ai-agent-search-optimization
+```
+
 ## Skills.sh Listing
 
 Skills.sh does not use a manual submission form for ordinary new skill listings. Public skills appear after the Skills CLI has seen installs from the GitHub repo.

@@ -1,0 +1,56 @@
+{
+  "name": "mcp-server-ai-agent-search-optimization",
+  "version": "0.1.0",
+  "mcpName": "io.github.seyitkaangunes/ai-agent-search-optimization",
+  "description": "MCP server for AI search optimization, crawler readiness, llms.txt, and GEO/AEO workflows.",
+  "type": "module",
+  "bin": {
+    "mcp-server-ai-agent-search-optimization": "./dist/server.js"
+  },
+  "files": [
+    "dist",
+    "ai-agent-search-optimization",
+    "server.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "node dist/server.js",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/server.js",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-search",
+    "geo",
+    "aeo",
+    "llmo",
+    "llms.txt",
+    "codex-skill"
+  ],
+  "author": "Seyit Kaan Gunes",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeyitKaanGunes/ai-agent-search-optimization.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SeyitKaanGunes/ai-agent-search-optimization/issues"
+  },
+  "homepage": "https://github.com/SeyitKaanGunes/ai-agent-search-optimization#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.6",
+    "typescript": "^5.9.3"
+  }
+}
