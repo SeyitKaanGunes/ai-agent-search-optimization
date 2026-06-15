@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Agent Search Optimization"
+  short_description: "Optimize sites for AI search visibility"
+  default_prompt: "Use $ai-agent-search-optimization to audit this website for AI search visibility and produce prioritized fixes."
