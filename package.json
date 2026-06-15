@@ -19,8 +19,13 @@
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "start": "node dist/server.js",
     "inspect": "npx @modelcontextprotocol/inspector node dist/server.js",
+    "validate:mcp": "node scripts/mcp-smoke-test.mjs",
+    "validate:pack": "npm pack --dry-run",
     "prepare": "npm run build",
     "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "mcp",

@@ -124,6 +124,34 @@ The MCP Registry metadata is in `server.json`. The package declares:
 mcpName: io.github.seyitkaangunes/ai-agent-search-optimization
 ```
 
+### MCP Development
+
+```bash
+npm ci
+npm run typecheck
+npm run build
+npm run validate:mcp
+npm run validate:pack
+```
+
+CI runs the same checks on pushes and pull requests. `scripts/mcp-smoke-test.mjs` starts the built MCP server with a real MCP client, then verifies the tools, resources, prompts, and sample outputs.
+
+### Publish To npm
+
+The npm package name is:
+
+```text
+mcp-server-ai-agent-search-optimization
+```
+
+To publish it from GitHub Actions:
+
+1. Create an npm automation token.
+2. Add it to the GitHub repository secrets as `NPM_TOKEN`.
+3. Create a GitHub release or run the `Publish npm package` workflow manually.
+
+After the npm package is live, switch from the GitHub `npx` config to the npm package config shown above. For MCP Registry submission, keep `server.json` in sync with the npm package version and submit the registry metadata after the package is publicly available.
+
 ## Skills.sh Listing
 
 Skills.sh does not use a manual submission form for ordinary new skill listings. Public skills appear after the Skills CLI has seen installs from the GitHub repo.
