@@ -1,5 +1,7 @@
 # AI Agent Search Optimization Skill
 
+[![skills.sh](https://skills.sh/b/SeyitKaanGunes/ai-agent-search-optimization)](https://skills.sh/SeyitKaanGunes/ai-agent-search-optimization)
+
 An open-source Codex skill for improving website visibility in AI search and answer engines.
 
 This is not another generic SEO checklist and it is not another AI visibility dashboard. The skill turns the current GEO/AEO/LLMO market gap into an agent workflow: crawlability checks, AI crawler access, entity clarity, citation-ready content, `llms.txt`, prompt-based visibility testing, and implementation briefs.
@@ -43,7 +45,13 @@ An open-source execution layer for AI search optimization.
 Install with the Skills CLI:
 
 ```bash
-npx skills add SeyitKaanGunes/ai-agent-search-optimization@ai-agent-search-optimization
+npx skills add SeyitKaanGunes/ai-agent-search-optimization --skill ai-agent-search-optimization
+```
+
+Use it once without installing:
+
+```bash
+npx skills use SeyitKaanGunes/ai-agent-search-optimization@ai-agent-search-optimization
 ```
 
 For local development, point Codex or your agent runtime at:
@@ -59,6 +67,18 @@ python ai-agent-search-optimization/scripts/audit_site.py https://example.com --
 python ai-agent-search-optimization/scripts/build_llms_txt.py --site https://example.com --name "Example" --summary "One sentence positioning." --from-sitemap
 python ai-agent-search-optimization/scripts/prompt_matrix.py --brand "Example" --category "customer support software" --competitors "Zendesk,Intercom"
 ```
+
+## Skills.sh Listing
+
+Skills.sh does not use a manual submission form for ordinary new skill listings. Public skills appear after the Skills CLI has seen installs from the GitHub repo.
+
+To help the listing appear:
+
+```bash
+npx skills add SeyitKaanGunes/ai-agent-search-optimization --skill ai-agent-search-optimization
+```
+
+Once installed by users, the skill can appear in Skills.sh search and leaderboard data based on anonymous aggregate install telemetry. Repo page display can be customized with `skills.sh.json` after the repository has been seen by the telemetry service.
 
 ## Positioning
 
