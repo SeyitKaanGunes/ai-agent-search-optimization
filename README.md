@@ -148,13 +148,15 @@ The npm package name is:
 mcp-server-ai-agent-search-optimization
 ```
 
-To publish it and register the MCP server from GitHub Actions:
+To publish a future version and register it in the MCP Registry from GitHub Actions:
 
-1. Create an npm automation token.
-2. Add it to the GitHub repository secrets as `NPM_TOKEN`.
-3. Create a GitHub release or run the `Publish npm package and MCP Registry` workflow manually.
+1. Bump `package.json`, `package-lock.json`, `server.json`, and server runtime versions together.
+2. Create an npm automation token.
+3. Add it to the GitHub repository secrets as `NPM_TOKEN`.
+4. Run the `Publish npm package and MCP Registry` workflow manually.
+5. Create a GitHub release for the published version.
 
-The workflow publishes the npm package first, then uses GitHub OIDC to authenticate `mcp-publisher` and publish `server.json` to the MCP Registry. After the npm package is live, switch from the GitHub `npx` config to the npm package config shown above.
+The workflow publishes the npm package first, then uses GitHub OIDC to authenticate `mcp-publisher` and publish `server.json` to the MCP Registry.
 
 ## Skills.sh Listing
 
