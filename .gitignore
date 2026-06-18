@@ -1,6 +1,8 @@
 __pycache__/
 *.pyc
 node_modules/
+.agents/
+skills-lock.json
 .npm-skills-cache/
 .DS_Store
 .env

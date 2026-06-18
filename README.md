@@ -136,7 +136,7 @@ npm run validate:pack
 
 CI runs the same checks on pushes and pull requests. `scripts/mcp-smoke-test.mjs` starts the built MCP server with a real MCP client, then verifies the tools, resources, prompts, and sample outputs.
 
-### Publish To npm
+### Publish To npm And MCP Registry
 
 The npm package name is:
 
@@ -144,13 +144,13 @@ The npm package name is:
 mcp-server-ai-agent-search-optimization
 ```
 
-To publish it from GitHub Actions:
+To publish it and register the MCP server from GitHub Actions:
 
 1. Create an npm automation token.
 2. Add it to the GitHub repository secrets as `NPM_TOKEN`.
-3. Create a GitHub release or run the `Publish npm package` workflow manually.
+3. Create a GitHub release or run the `Publish npm package and MCP Registry` workflow manually.
 
-After the npm package is live, switch from the GitHub `npx` config to the npm package config shown above. For MCP Registry submission, keep `server.json` in sync with the npm package version and submit the registry metadata after the package is publicly available.
+The workflow publishes the npm package first, then uses GitHub OIDC to authenticate `mcp-publisher` and publish `server.json` to the MCP Registry. After the npm package is live, switch from the GitHub `npx` config to the npm package config shown above.
 
 ## Skills.sh Listing
 
