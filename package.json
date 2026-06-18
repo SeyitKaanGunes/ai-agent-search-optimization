@@ -1,11 +1,11 @@
 {
   "name": "mcp-server-ai-agent-search-optimization",
-  "version": "0.1.0",
-  "mcpName": "io.github.seyitkaangunes/ai-agent-search-optimization",
+  "version": "0.1.1",
+  "mcpName": "io.github.SeyitKaanGunes/ai-agent-search-optimization",
   "description": "MCP server for AI search optimization, crawler readiness, llms.txt, and GEO/AEO workflows.",
   "type": "module",
   "bin": {
-    "mcp-server-ai-agent-search-optimization": "./dist/server.js"
+    "mcp-server-ai-agent-search-optimization": "dist/server.js"
   },
   "files": [
     "dist",

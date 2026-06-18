@@ -121,7 +121,7 @@ After npm publish, the config becomes:
 The MCP Registry metadata is in `server.json`. The package declares:
 
 ```text
-mcpName: io.github.seyitkaangunes/ai-agent-search-optimization
+mcpName: io.github.SeyitKaanGunes/ai-agent-search-optimization
 ```
 
 ### MCP Development

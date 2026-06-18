@@ -1,4 +1,4 @@
-const DEFAULT_USER_AGENT = "mcp-server-ai-agent-search-optimization/0.1.0";
+const DEFAULT_USER_AGENT = "mcp-server-ai-agent-search-optimization/0.1.1";
 
 export type FetchResult = {
   url: string;
