@@ -1,6 +1,10 @@
 # AI Agent Search Optimization Skill
 
 [![skills.sh](https://skills.sh/b/SeyitKaanGunes/ai-agent-search-optimization)](https://skills.sh/SeyitKaanGunes/ai-agent-search-optimization)
+[![npm](https://img.shields.io/npm/v/mcp-server-ai-agent-search-optimization)](https://www.npmjs.com/package/mcp-server-ai-agent-search-optimization)
+[![MCP Registry](https://img.shields.io/badge/MCP%20Registry-active-brightgreen)](https://registry.modelcontextprotocol.io/?q=io.github.SeyitKaanGunes%2Fai-agent-search-optimization)
+[![GitHub release](https://img.shields.io/github/v/release/SeyitKaanGunes/ai-agent-search-optimization)](https://github.com/SeyitKaanGunes/ai-agent-search-optimization/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 An open-source Codex skill for improving website visibility in AI search and answer engines.
 
@@ -90,22 +94,9 @@ This repository also ships an MCP server that exposes the skill as callable tool
 - `llms_txt_review`
 - `geo_content_brief`
 
-### Local MCP Config
+### MCP Config
 
-Until the npm package is published, run directly from GitHub:
-
-```json
-{
-  "mcpServers": {
-    "ai-agent-search-optimization": {
-      "command": "npx",
-      "args": ["-y", "github:SeyitKaanGunes/ai-agent-search-optimization"]
-    }
-  }
-}
-```
-
-After npm publish, the config becomes:
+Use the published npm package:
 
 ```json
 {
@@ -113,6 +104,19 @@ After npm publish, the config becomes:
     "ai-agent-search-optimization": {
       "command": "npx",
       "args": ["-y", "mcp-server-ai-agent-search-optimization"]
+    }
+  }
+}
+```
+
+For development, run directly from GitHub:
+
+```json
+{
+  "mcpServers": {
+    "ai-agent-search-optimization": {
+      "command": "npx",
+      "args": ["-y", "github:SeyitKaanGunes/ai-agent-search-optimization"]
     }
   }
 }
