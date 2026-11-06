@@ -2,13 +2,13 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.SeyitKaanGunes/ai-agent-search-optimization",
   "title": "AI Agent Search Optimization",
-  "description": "Audit AI search readiness, generate llms.txt drafts, and build GEO/AEO prompt matrices for websites.",
-  "version": "0.1.1",
+  "description": "SEO and AI search audits: check AI crawler access, draft llms.txt, and build GEO/AEO prompt tests.",
+  "version": "0.1.2",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "mcp-server-ai-agent-search-optimization",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "transport": {
         "type": "stdio"
       }

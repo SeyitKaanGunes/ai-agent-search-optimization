@@ -1,4 +1,4 @@
-# AI Agent Search Optimization Skill
+# AI Agent Search Optimization: MCP Server and Agent Skill
 
 [![skills.sh](https://skills.sh/b/SeyitKaanGunes/ai-agent-search-optimization)](https://skills.sh/SeyitKaanGunes/ai-agent-search-optimization)
 [![npm](https://img.shields.io/npm/v/mcp-server-ai-agent-search-optimization)](https://www.npmjs.com/package/mcp-server-ai-agent-search-optimization)
@@ -6,7 +6,7 @@
 [![GitHub release](https://img.shields.io/github/v/release/SeyitKaanGunes/ai-agent-search-optimization)](https://github.com/SeyitKaanGunes/ai-agent-search-optimization/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-An open-source Codex skill for improving website visibility in AI search and answer engines.
+An open-source MCP server and agent skill for SEO and AI search visibility: audit AI crawler access, generate `llms.txt`, and build GEO/AEO prompt tests for ChatGPT, Perplexity, and Google AI Mode.
 
 This is not another generic SEO checklist and it is not another AI visibility dashboard. The skill turns the current GEO/AEO/LLMO market gap into an agent workflow: crawlability checks, AI crawler access, entity clarity, citation-ready content, `llms.txt`, prompt-based visibility testing, and implementation briefs.
 
@@ -46,7 +46,20 @@ An open-source execution layer for AI search optimization.
 
 ## Install
 
-Install with the Skills CLI:
+Add it to your MCP client as a local server. No API key is required:
+
+```json
+{
+  "mcpServers": {
+    "ai-agent-search-optimization": {
+      "command": "npx",
+      "args": ["-y", "mcp-server-ai-agent-search-optimization"]
+    }
+  }
+}
+```
+
+Or install it as an agent skill with the Skills CLI:
 
 ```bash
 npx skills add SeyitKaanGunes/ai-agent-search-optimization --skill ai-agent-search-optimization
@@ -96,18 +109,7 @@ This repository also ships an MCP server that exposes the skill as callable tool
 
 ### MCP Config
 
-Use the published npm package:
-
-```json
-{
-  "mcpServers": {
-    "ai-agent-search-optimization": {
-      "command": "npx",
-      "args": ["-y", "mcp-server-ai-agent-search-optimization"]
-    }
-  }
-}
-```
+For the published npm package, use the config under [Install](#install).
 
 For development, run directly from GitHub:
 

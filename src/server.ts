@@ -10,7 +10,7 @@ import { promptMatrix } from "./tools/prompt-matrix.js";
 
 const server = new McpServer({
   name: "ai-agent-search-optimization",
-  version: "0.1.1"
+  version: "0.1.2"
 });
 
 server.tool(

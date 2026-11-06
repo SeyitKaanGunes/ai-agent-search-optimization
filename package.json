@@ -1,8 +1,8 @@
 {
   "name": "mcp-server-ai-agent-search-optimization",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "mcpName": "io.github.SeyitKaanGunes/ai-agent-search-optimization",
-  "description": "MCP server for AI search optimization, crawler readiness, llms.txt, and GEO/AEO workflows.",
+  "description": "MCP server for SEO and AI search optimization: audit AI crawler access, generate llms.txt, and build GEO/AEO prompt tests.",
   "type": "module",
   "bin": {
     "mcp-server-ai-agent-search-optimization": "dist/server.js"
@@ -29,12 +29,20 @@
   },
   "keywords": [
     "mcp",
+    "mcp-server",
     "model-context-protocol",
+    "seo",
     "ai-search",
+    "ai-search-optimization",
+    "ai-visibility",
+    "ai-crawlers",
     "geo",
+    "generative-engine-optimization",
     "aeo",
+    "answer-engine-optimization",
     "llmo",
     "llms.txt",
+    "agent-skill",
     "codex-skill"
   ],
   "author": "Seyit Kaan Gunes",
@@ -51,8 +59,8 @@
     "node": ">=20.0.0"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.29.0",
-    "zod": "^3.25.76"
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@types/node": "^20.19.6",
